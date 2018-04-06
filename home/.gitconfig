@@ -1,0 +1,19 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Coco Coder (aka Delaney Burke)
+	email = shout@cococoder.com
+[push]
+	default = simple
+[core]
+	editor = vim
+	autocrlf = input
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	unstage = reset HEAD --
+	un = unstage
