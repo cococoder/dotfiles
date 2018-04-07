@@ -69,7 +69,7 @@ export EDITOR='vim'
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
+export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-bash libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-bash
@@ -77,5 +77,6 @@ export EDITOR='vim'
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias bashconfig="mate ~/.bashrc"
-# alias ohmybash="mate ~/.oh-my-bash"
+alias bashconfig="vim ~/.bashrc && source ~/.bashrc && echo .bashrc updated!"
+alias ohmybash="vim ~/.oh-my-bash && source ~/.oh-my-bash && echo .oh-my-bash updated!"
+alias mux="tmuxinator"
