@@ -81,5 +81,6 @@ alias bashconfig="vim ~/.bashrc && source ~/.bashrc && echo .bashrc updated!"
 alias ohmybash="vim ~/.oh-my-bash && source ~/.oh-my-bash && echo .oh-my-bash updated!"
 alias mux="tmuxinator"
 
-"$(direnv hook $SHELL)"
+eval "$(rbenv init -)"
+eval "$(direnv hook $SHELL)"
 
