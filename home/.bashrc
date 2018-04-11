@@ -80,3 +80,6 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 alias bashconfig="vim ~/.bashrc && source ~/.bashrc && echo .bashrc updated!"
 alias ohmybash="vim ~/.oh-my-bash && source ~/.oh-my-bash && echo .oh-my-bash updated!"
 alias mux="tmuxinator"
+
+"$(direnv hook $SHELL)"
+
