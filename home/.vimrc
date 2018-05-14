@@ -22,3 +22,8 @@ set ts=4
 :autocmd Filetype ruby set softtabstop=2
 :autocmd Filetype ruby set sw=2
 :autocmd Filetype ruby set ts=2
+
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
