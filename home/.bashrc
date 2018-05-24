@@ -83,3 +83,6 @@ alias mux="tmuxinator"
 
 eval "$(direnv hook $SHELL)"
 
+if [ -d "/vagrant" ]; then
+ cd /vagrant
+fi
