@@ -84,5 +84,7 @@ alias mux="tmuxinator"
 eval "$(direnv hook $SHELL)"
 
 if [ -d "/vagrant" ]; then
+ homesick pull
  cd /vagrant
+ direnv allow
 fi
