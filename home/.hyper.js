@@ -99,15 +99,7 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-     "hyperline",
-     "hypercwd",
-     "hyperborder",
-     "hyper-statusline",
-     "hyperlinks",
-     "hyper-history",
-     "hyperfull",
-     "hyper-alt-click",
-     "hyperterm-tab-icons",
+     
   ],
 
   // in development, you can create a directory under
