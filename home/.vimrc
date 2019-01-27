@@ -36,6 +36,5 @@ let g:netrw_banner = 0
 let g:netrw_list_hide = &wildignore
 augroup ProjectDrawer
   autocmd!
-  autocmd VimEnter * :Vexplore
 augroup END
-
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']

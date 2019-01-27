@@ -4,7 +4,7 @@
 	process = git-lfs filter-process
 	required = true
 [user]
-	name = Coco Coder (aka Delaney Burke)
+	name = Cococoder
 	email = shout@cococoder.com
 [push]
 	default = simple

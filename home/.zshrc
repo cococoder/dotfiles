@@ -1,9 +1,20 @@
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/opt/chruby/share/chruby/auto.sh
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
+export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig" 
+export PATH="/usr/local/opt/mariadb@10.2/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/mariadb@10.2/lib"
+export CPPFLAGS="-I/usr/local/opt/mariadb@10.2/include"
+export PKG_CONFIG_PATH="/usr/local/opt/mariadb@10.2/share/pkgconfig"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/cococoder/.oh-my-zsh"
-
+#For compilers to find icu4c you may need to set:
+export LDFLAGS="-L/usr/local/opt/icu4c/lib"
+export CPPFLAGS="-I/usr/local/opt/icu4c/include"
+export PKG_CONFIG_PATH="/usr/local/opt/icu4c/lib/pkgconfig"
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -62,7 +73,9 @@ ZSH_THEME="spaceship"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
+  git,
+  sudo,
+  rails
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -93,5 +106,18 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="vim ~/.zshrc"
+alias reload="source ~/.zshrc && echo zshrc reloaded - ok "
+alias zshconfig="vim ~/.zshrc && source ~/.zshrc && reload"
+alias be="bundle exec"
+alias be-r="be ./bin/rspec"
 alias ohmyzsh="vim ~/.oh-my-zsh"
+alias lab="~/Lab"
+alias ctags="`brew --prefix`/bin/ctags"
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+alias wrk="~/Lab/bigsofa/platform"
+export PATH="/usr/local/opt/icu4c/bin:$PATH"
+export PATH="/usr/local/opt/icu4c/sbin:$PATH"
+export PATH="/usr/local/opt/elasticsearch@2.4/bin:$PATH"
+export RACK_TIMEOUT_SERVICE_TIMEOUT=15
+export PATH="/usr/local/opt/mariadb@10.2/bin:$PATH"
+export PATH="/usr/local/opt/ruby/bin:$PATH"
