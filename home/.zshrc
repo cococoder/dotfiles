@@ -1,3 +1,4 @@
+export EDITOR=vim
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
