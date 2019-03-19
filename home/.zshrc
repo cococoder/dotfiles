@@ -3,10 +3,6 @@ source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig" 
-export PATH="/usr/local/opt/mariadb@10.2/bin:$PATH"
-export LDFLAGS="-L/usr/local/opt/mariadb@10.2/lib"
-export CPPFLAGS="-I/usr/local/opt/mariadb@10.2/include"
-export PKG_CONFIG_PATH="/usr/local/opt/mariadb@10.2/share/pkgconfig"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -89,11 +85,11 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+ if [[ -n $SSH_CONNECTION ]]; then
+   export EDITOR='vim'
+ else
+   export EDITOR='mvim'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -110,9 +106,14 @@ source $ZSH/oh-my-zsh.sh
 alias reload="source ~/.zshrc && echo zshrc reloaded - ok "
 alias zshconfig="vim ~/.zshrc && source ~/.zshrc && reload"
 alias be="bundle exec"
+alias r="rails"
+alias rdm="rails db:migrate"
 alias be-r="be ./bin/rspec"
+alias dc="docker-compose"
+alias tm="tmux"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias lab="~/Lab"
+alias pwrk="lab && cd patchwork/employerportal"
 alias ctags="`brew --prefix`/bin/ctags"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 alias wrk="~/Lab/bigsofa/platform"
@@ -120,5 +121,4 @@ export PATH="/usr/local/opt/icu4c/bin:$PATH"
 export PATH="/usr/local/opt/icu4c/sbin:$PATH"
 export PATH="/usr/local/opt/elasticsearch@2.4/bin:$PATH"
 export RACK_TIMEOUT_SERVICE_TIMEOUT=15
-export PATH="/usr/local/opt/mariadb@10.2/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
