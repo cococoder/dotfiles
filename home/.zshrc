@@ -17,5 +17,5 @@ alias rdm="rails db:migrate"
 alias dc="docker-compose"
 alias tm="tmux"
 alias ohmyzsh="vim ~/.oh-my-zsh"
-alias ctags="`brew --prefix`/bin/ctags"
+
 
