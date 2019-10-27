@@ -8,6 +8,9 @@ plugins=(
   tmux
   sudo
   ruby
+  rake
+  thor
+  rbenv
 )
 
 source $ZSH/oh-my-zsh.sh
