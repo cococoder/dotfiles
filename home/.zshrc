@@ -11,6 +11,8 @@ plugins=(
   rake
   thor
   rbenv
+  docker
+  docker-compose
 )
 
 source $ZSH/oh-my-zsh.sh
