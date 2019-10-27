@@ -1,6 +1,6 @@
 export EDITOR=vim
 
-source $ZSH/oh-my-zsh.sh
+source ~/.oh-my-zsh
 
 ZSH_THEME="af-"
 plugins=(
