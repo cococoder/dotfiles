@@ -1,13 +1,16 @@
 export EDITOR=vim
 
 export ZSH="/root/.oh-my-zsh"
-source $ZSH/oh-my-zsh.sh
-
 ZSH_THEME="af-magic"
 
 plugins=(
-  
+  git,
+  tmux,
+  sudo,
+  ruby
 )
+
+source $ZSH/oh-my-zsh.sh
 
 alias reload="source ~/.zshrc && echo zshrc reloaded - ok "
 alias zshconfig="vim ~/.zshrc && source ~/.zshrc && reload"
