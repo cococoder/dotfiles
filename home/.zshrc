@@ -1,8 +1,10 @@
 export EDITOR=vim
 
-source ~/.oh-my-zsh
+export ZSH="/root/.oh-my-zsh"
+source $ZSH/oh-my-zsh.sh
 
-ZSH_THEME="af-"
+ZSH_THEME="Pi"
+
 plugins=(
   git,
   sudo,
