@@ -3,12 +3,10 @@ export EDITOR=vim
 export ZSH="/root/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
 
-ZSH_THEME="Pi"
+ZSH_THEME="af-magic"
 
 plugins=(
-  git,
-  sudo,
-  rails
+  
 )
 
 alias reload="source ~/.zshrc && echo zshrc reloaded - ok "
