@@ -15,7 +15,7 @@ plugins=(
   docker-compose
 )
 
-source $ZSH
+source $ZSH/oh-my-zsh.sh
 
 alias reload="source ~/.zshrc && echo zshrc reloaded - ok "
 alias zshconfig="vim ~/.zshrc && source ~/.zshrc && reload"
