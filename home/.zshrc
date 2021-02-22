@@ -1,6 +1,6 @@
 export EDITOR=vim
 
-export ZSH="/root/.oh-my-zsh"
+export ZSH="~/.oh-my-zsh"
 ZSH_THEME="af-magic"
 
 plugins=(
@@ -15,7 +15,7 @@ plugins=(
   docker-compose
 )
 
-source $ZSH/oh-my-zsh.sh
+source $ZSH
 
 alias reload="source ~/.zshrc && echo zshrc reloaded - ok "
 alias zshconfig="vim ~/.zshrc && source ~/.zshrc && reload"
