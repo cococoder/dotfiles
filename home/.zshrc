@@ -1,7 +1,7 @@
 export EDITOR=vim
 
 export ZSH="~/.oh-my-zsh"
-ZSH_THEME="af-magic"
+ZSH_THEME="apple"
 
 plugins=(
   git
