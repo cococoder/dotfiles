@@ -23,7 +23,6 @@ alias be="bundle exec"
 alias r="rails"
 alias rdm="rails db:migrate"
 alias dc="docker-compose"
-alias tm="tmux"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 
 
